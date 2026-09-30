@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>共享冷库 · 租格与温度计费平台</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div id="login-view" class="login-wrap hidden">
+  <form id="login-form" class="login-card">
+    <div class="brand"><span class="snow">❄</span> 共享冷库平台</div>
+    <p class="sub">租格 · 温区监控 · 计费用（演示数据均为虚构）</p>
+    <label>账号<input name="user" autocomplete="username" value="admin"></label>
+    <label>密码<input name="password" type="password" autocomplete="current-password" value="admin1234"></label>
+    <button class="btn primary" type="submit">登录</button>
+    <div class="hint">admin/admin1234 · finance/finance1234 · t_lvyuan/pass1234 等</div>
+  </form>
+</div>
+
+<div id="app-view" class="hidden">
+  <header class="topbar">
+    <div class="brand"><span class="snow">❄</span> 共享冷库 · 租格与温度计费</div>
+    <nav id="nav"></nav>
+    <div class="who"><span id="who-name"></span>
+      <button class="btn ghost sm" id="logout-btn">退出</button></div>
+  </header>
+  <main id="view"></main>
+</div>
+
+<div id="modal-root"></div>
+<div id="toast"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>
